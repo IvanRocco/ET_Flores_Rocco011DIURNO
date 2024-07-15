@@ -1,0 +1,82 @@
+
+body {
+    background-image: url("{% static 'img/background.jpg' %}");
+    background-position-y: top;
+    background-position-x: center;
+}
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    
+}
+.diapo1{
+    margin: 50px;
+    opacity: 0.8;
+    
+}
+.diapo2{
+    background-color: rgb(255, 255, 255);
+    width:300px;
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin: 50px;
+    opacity: 0.8;
+}
+.diapo3{
+    background-color: rgb(255, 255, 255);
+    width:300px;
+    width: 500px;
+    height: 300px;
+    float: right;   
+    margin: 50px;
+    opacity: 0.8;
+}
+.menu{
+    background-color:rgb(165, 136, 136);
+
+}
+
+.menu{
+    background-color:gray;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    
+}
+
+#opciones{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info{
+    background-color: gray;
+}
+
+#tituloH1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#h5a{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+#bTitulo{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#pic3{
+    margin-top: -25%;
+}
+.carousel-inner{
+    width: 200px;
+    height: 700px;
+}

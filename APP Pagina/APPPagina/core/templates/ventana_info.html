@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style1.css">
+    <title>AboutUs</title>
+    <link href="{% static 'css/Style1.css' %}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url(img/background.jpeg);">
+    
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-light, menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#opciones" style="margin-left: 15px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img src="{% static 'img/logo.jpg' %}" width="30px" height="30px" style="margin-left: 15px;" alt="Logo">
+            </a>
+                                <!-- Links -->
+                                <div class="collapse navbar-collapse" id="opciones">
+                                    <ul class="navbar-nav" style="margin-left: 15px;">
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'tracklist' %}">TrackList</a>
+                                    </li>
+                    
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="{% url 'ventana_info' %}">About us</a>
+                                  
+                                      
+                                      {% if user.is_authenticated %}  
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="{% url 'logout' %}" style="color: rgb(0, 0, 0); margin-left: 1400px;">Cerrar Sesion</a>
+                                        </li>
+                                      {% else %}
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'signup' %}" style="color: rgb(0, 0, 0); margin-left: 1300px;">Registrarse</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="{% url 'signin' %}" style="color: rgb(0, 0, 0); margin-left: 30px;">Iniciar Sesion</a>
+                                        </li>
+                                        {% endif%}
+                                    </ul>
+                                  </div>
+        </nav>
+    </div>
+    
+    <div class="diapo1">
+        <h1 style="color: rgb(255, 255, 255); text-align: center;">¿Quiénes somos?</h1>
+    </div>
+    <div class="diapo2">
+        <h1 style="color: rgb(42, 77, 4);text-align: center; font-family: serif; padding: 30px">Nero On The Track</h1>
+        <p style="color: rgb(42, 77, 4);text-align: center; font-family:serif;font-size: large;">
+            Nero es un compositor de beats apasionado por la música urbana. Su interés en la música comenzó relativamente tarde en comparación con aquellos que dicen haber comenzado desde la infancia. Considera que lo que impulsa su carrera es el esfuerzo y el cariño que pone en su trabajo, creyendo que nunca es tarde para empezar y que con dedicación las cosas van saliendo.
+
+
+        </p>
+    </div>
+    <div class="diapo3">
+        <h1 style="text-align: center;font-family: serif;padding: 30px;">ZaZa Inc</h1>
+        <p style="font-size: large;">Empresa independiente, creada recientemente con el fin de poder dar más visibilidad a personas y/o emprendimientos con futuro, que no tienen la repercusión merecida,
+            
+        </p>
+    </div>
+    <div style="position: absolute; padding-top: 35%;"><p style="color: aliceblue;">@copyright Derechos reservados</p>
+    </div>
+    <div> 
+        <video src="https://www.youtube.com/watch?v=1w7OgIMMRc4" controls style="width: 660px; height: 450px;"></video>
+    </div>
+    <div style="position: absolute;">
+        <a href="https://www.instagram.com/neroonthetrack/"><img src="img/Instagram_logo_2016.svg.webp" alt="alo"></a>
+    </div>
+</body>
+</html>
